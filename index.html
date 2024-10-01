@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavender Loom</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <header class="top-header">
+        <nav class="top-nav">
+            <ul class="top-nav-link">
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+    <nav class="main-nav">
+        <div class="main-nav-div">
+            <div class="logo">
+                Lavender Loom
+            </div>
+            <ul class="main-nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="cart-container">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-total">$0.00</span>
+                <div class="hamburger-menu" onclick="toggleHam()">
+                    <div class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links" id="menu-links">
+                        <ul>
+                            <li><a href="#about" onclick="toggleHam()">About</a></li>
+                            <li><a href="#skills" onclick="toggleHam()">Skills</a></li>
+                            <li><a href="#projects" onclick="toggleHam()">Projects</a></li>
+                            <li><a href="#contact" onclick="toggleHam()">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button class="search-button">Search</button>
+        </div>
+    </nav>
+    
+    <script src="script.js"></script>
+</body>
+</html>

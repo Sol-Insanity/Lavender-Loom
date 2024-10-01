@@ -1,0 +1,40 @@
+
+@media (max-width: 1810px) {
+    .logo{
+        font-size: 25px;
+    }
+
+    .search-container {
+        top: 5px;;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main-nav-links {
+        display: none; /* Hide the top navigation links */
+    }
+
+    .hamburger-menu {
+        display: flex; /* Show hamburger menu */
+    }
+    
+    /* Ensure the logo and search are visible */
+    .logo {
+        margin-bottom: 18px; /* Add some space between the logo and the search bar */
+    }
+
+    .search-container {
+        width: 95%; /* Full width for the search bar */
+    }
+
+    .cart-container {
+        margin-top: -20px; /* Add margin to separate the cart from the logo */
+    }
+}
+
+@media (min-width: 1000px) {
+    .hamburger-menu {
+        display: none; /* Completely hide the hamburger menu */
+    }
+}
+
