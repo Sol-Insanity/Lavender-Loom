@@ -11,7 +11,18 @@ body {
 }
 
 nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#head{
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Styles for the top header */
@@ -22,6 +33,7 @@ nav {
     justify-content: flex-end;
     padding: 0 20px;
     height: 30px;
+    position: sticky;
 }
 
 /* Styles for the top navigation */
@@ -46,7 +58,7 @@ nav {
 .top-nav-link li a:hover {
     color: rgb(137, 206, 206);
     text-decoration: underline;
-    text-underline-offset: 0.5rem;
+    text-underline-offset: 0.3rem;
     text-decoration-color: whitesmoke;
 }
 
@@ -226,6 +238,20 @@ nav {
 .menu-links a:hover {
     background-color: #4CAF50; /* Change background on hover */
     color: white; /* Change text color on hover */
+}
+
+.hero{
+    background-image: url('images/bbg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 

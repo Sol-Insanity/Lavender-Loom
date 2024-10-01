@@ -8,52 +8,61 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <header class="top-header">
-        <nav class="top-nav">
-            <ul class="top-nav-link">
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Signup</a></li>
-            </ul>
-        </nav>
-    </header>
-    <nav class="main-nav">
-        <div class="main-nav-div">
-            <div class="logo">
-                Lavender Loom
-            </div>
-            <ul class="main-nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <div class="cart-container">
-                <span class="cart-icon">🛒</span>
-                <span class="cart-total">Rs.0.00</span>
-                <div class="hamburger-menu" onclick="toggleHam()">
-                    <div class="hamburger-icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="menu-links" id="menu-links">
-                        <ul>
-                            <li><a href="#about" onclick="toggleHam()">About</a></li>
-                            <li><a href="#skills" onclick="toggleHam()">Skills</a></li>
-                            <li><a href="#projects" onclick="toggleHam()">Projects</a></li>
-                            <li><a href="#contact" onclick="toggleHam()">Contact</a></li>
-                        </ul>
+    <section id = "head">
+        <header class="top-header">
+            <nav class="top-nav">
+                <ul class="top-nav-link">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Signup</a></li>
+                </ul>
+            </nav>
+        </header>
+        <nav class="main-nav">
+            <div class="main-nav-div">
+                <div class="logo">
+                    Lavender Loom
+                </div>
+                <ul class="main-nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="cart-container">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-total">Rs.0.00</span>
+                    <div class="hamburger-menu" onclick="toggleHam()">
+                        <div class="hamburger-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="menu-links" id="menu-links">
+                            <ul>
+                                <li><a href="#about" onclick="toggleHam()">About</a></li>
+                                <li><a href="#skills" onclick="toggleHam()">Skills</a></li>
+                                <li><a href="#projects" onclick="toggleHam()">Projects</a></li>
+                                <li><a href="#contact" onclick="toggleHam()">Contact</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="search-container">
-            <input type="text" class="search-input" placeholder="Search...">
-            <button class="search-button">Search</button>
-        </div>
-    </nav>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search...">
+                <button class="search-button">Search</button>
+            </div>
+        </nav>
+    </section>
     
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to Lavender Loom</h1>
+            <p>Get the best quality products at the best prices</p>
+            <button class="hero-button">Shop Now</button>
+        </div>
+
     <script src="script.js"></script>
 </body>
 </html>
