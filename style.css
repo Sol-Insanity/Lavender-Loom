@@ -8,6 +8,7 @@
 /* Set default font for the body */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
 }
 
 nav {
@@ -84,8 +85,8 @@ nav {
 .main-nav-div {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Center vertically */
-    height: 100%; /* Fill the height of the main navigation */
+    align-items: center; 
+    height: 100%;
 }
 
 /* Styles for the logo in the main navigation */
@@ -93,17 +94,19 @@ nav {
     color: rgb(42, 0, 51);
     font-weight: 700;
     font-size: 2rem;
-    display: flex; /* Use flexbox to align items */
-    align-items: center; /* Center vertically */
-    height: 100%; /* Fill the height of the main navigation */
+    display: flex; 
+    align-items: center; 
+    height: 100%; 
+    font-feature-settings: "smcp"; 
+    text-transform: none; 
 }
 
 /* Styles for the main navigation list */
 .main-nav-links {
-    position: absolute; /* Set position to absolute */
-    top: 15px; /* Adjust this value as needed */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center it perfectly */
+    position: absolute; 
+    top: 15px; 
+    left: 50%; 
+    transform: translateX(-50%); 
     list-style: none;
     display: flex;
     gap: 15px;
@@ -129,9 +132,9 @@ nav {
 .search-container {
     display: flex;
     align-items: center;
-    width: 70%; /* Adjust width to your preference */
-    position: relative; /* Position search container absolutely */
-    bottom: 0; /* Aligns it to the bottom of the main navigation */
+    width: 70%; 
+    position: relative; 
+    bottom: 0; 
     left: 50%;
     transform: translateX(-50%); /* Center the search bar */
     margin-top: -13px;
@@ -230,28 +233,146 @@ nav {
 }
 
 .menu-links ul {
-    list-style: none; /* Removes default bullets from list items */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
 }
 /* Hover effect for links */
 .menu-links a:hover {
-    background-color: #4CAF50; /* Change background on hover */
-    color: white; /* Change text color on hover */
+    background-color: #4CAF50; 
+    color: white; 
 }
 
-.hero{
-    background-image: url('images/bbg.jpg');
-    background-size: cover;
+
+.hero {
+    margin-top: 101px; 
+    background-image: url('images/background.jpeg');
+    background-size: contain;
     background-position: center;
-    height: 100vh;
+    background-repeat: no-repeat;
+    background-color: #cfc0ad;
+    height: 80vh; 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; 
     align-items: center;
-    color: white;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.hero-text {
+    max-width: 1000px; 
+    color: rgb(43, 0, 99);
     font-size: 2rem;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
+    padding-left: 550px; 
+
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-button {
+    padding: 10px 20px;
+    background-color: #f5a623;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #e09612;
 }
 
 
+.service-banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f0f0f0;
+    height: 12vh;
+}
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.service-icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.service-text {
+    font-size: 14px;
+    color: #333;
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+.featured {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+.more-deals {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    background-color: #2196F3;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+.product h3 {
+    margin: 10px 0;
+    font-size: 14px;
+}
+.price {
+    font-weight: bold;
+    color: #4CAF50;
+}
+.add-to-cart {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+.fd {
+    text-align: center;
+}
